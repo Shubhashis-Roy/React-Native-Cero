@@ -24,7 +24,7 @@
 
 - With the help of react-native bridg(RN Bridge) they able to communicate to each other.
 
-![React-Native Architecture](https://github.com/Shubhashis-Roy/React-Native-Cero/assets/94479675/83aaf480-9150-427b-8f87-2b819845c275)
+![React-Native Architecture](https://github.com/Shubhashis-Roy/React-Native-Cero/assets/94479675/9e24687d-2fa1-4c3a-8b81-1c46a83fcc6e)
 
 #### Communication Process:
 
@@ -42,7 +42,7 @@
 
 ### New Architecture:
 
-![react-native new Architecture](https://github.com/Shubhashis-Roy/React-Native-Cero/assets/94479675/a9018b42-495d-4842-a83b-8257c2d22a71)
+![react-native new Architecture](https://github.com/Shubhashis-Roy/React-Native-Cero/assets/94479675/55b7122e-0fac-4c27-9228-3daa8a3bf3d4)
 
 - RN-Bridge is replaced by JSI (JS Interface).
 
