@@ -102,3 +102,13 @@ Read more about how css work:
 - Stack Navigation:
   - StackActions reference:
     <a href="https://reactnavigation.org/docs/stack-actions">Link</a>
+
+#### Query :
+
+onClick={() => handleClicked()}
+
+onClick={() => handleClicked}
+
+onClick={handleClick}
+
+onClick={handleClick()}

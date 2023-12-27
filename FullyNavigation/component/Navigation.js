@@ -1,12 +1,14 @@
 import {NavigationContainer} from '@react-navigation/native';
 import Home from '../screens/bottomStack/Home';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Profile from '../screens/bottomStack/Profile';
 import setting from '../screens/bottomStack/Setting';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import TweetDetails from '../screens/homeStake/TweetDetails';
 import Tweet from '../screens/homeStake/Tweet';
 import ProfileDetails from '../screens/homeStake/ProfileDetails';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+import Payments from '../screens/drawer/Payments';
 
 // Stack Navigation
 const StackNavigation = createNativeStackNavigator();
@@ -58,10 +60,21 @@ const TabGroup = () => {
   );
 };
 
+// Drawer Navigation
+const Drawer = createDrawerNavigator();
+
+const DrawerNavigation = () => {
+  <Drawer.Navigator>
+    <Drawer.Screen name="TabGroup" component={TabGroup} />
+    <Drawer.Screen name="Payments" component={Payments} />
+  </Drawer.Navigator>;
+};
+
 export default function Navigation() {
   return (
     <NavigationContainer>
-      <TabGroup />
+      {/* <TabGroup /> */}
+      <DrawerNavigation />
     </NavigationContainer>
   );
 }
