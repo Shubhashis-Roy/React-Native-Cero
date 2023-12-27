@@ -1,5 +1,5 @@
 - Create a Project: `npx react-native init AwesomeProject`
-- Start the project: `npx react-native run-android` || `npm start`
+- Start the project: `npx react-native run-android` || `npm run start` || `npm start`
 - restart: `shift+r` || `r`
 
 <h2> React-Native Architecture </h2>
@@ -96,11 +96,9 @@ Read more about how css work:
 - UI practice Platform: <a href="https://dribbble.com/" >Dribbble</a>
 - Color Card Website: <a href="https://www.uicolorpicker.learncodeonline.in/" >Clicked</a>
 
-Note pad:
-babel.config.js is used for bundle all the file in a single file.
-In the bable we used matro config.metro is a bundle
+#### Navigation:
 
-entry file for bable is index.js.
-
-npx react-native init AwesomeProject01  
-npx react-native run-android
+- Navigation lifecycle:
+- Stack Navigation:
+  - StackActions reference:
+    <a href="https://reactnavigation.org/docs/stack-actions">Link</a>
