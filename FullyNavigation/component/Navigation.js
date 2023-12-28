@@ -9,6 +9,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Payments from '../screens/drawer/Payments';
+import 'react-native-gesture-handler';
 
 // Stack Navigation
 const StackNavigation = createNativeStackNavigator();
@@ -42,7 +43,7 @@ const ProfileStack = () => {
 // Bottom Navigation
 const Tab = createBottomTabNavigator();
 
-const TabGroup = () => {
+const TabNavigation = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen
@@ -64,17 +65,20 @@ const TabGroup = () => {
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigation = () => {
-  <Drawer.Navigator>
-    <Drawer.Screen name="TabGroup" component={TabGroup} />
-    <Drawer.Screen name="Payments" component={Payments} />
-  </Drawer.Navigator>;
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name="TabNavigation" component={TabNavigation} />
+      <Drawer.Screen name="Payments" component={Payments} />
+    </Drawer.Navigator>
+  );
 };
 
+// Finally ruturn
 export default function Navigation() {
   return (
     <NavigationContainer>
-      {/* <TabGroup /> */}
       <DrawerNavigation />
+      {/* <TabNavigation /> */}
     </NavigationContainer>
   );
 }

@@ -3,13 +3,13 @@ import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 
 const Payments = () => {
-  const navigation = useNavigation();
+  // const navigation = useNavigation();
 
   return (
     <View>
       <Text style={styles.header}>Payments</Text>
-      <Button title="Open Drawer" onPress={() => navigation.openDrawer()} />
-      <Button title="Open Drawer" onPress={() => navigation.goBack()} />
+      {/* <Button title="Open Drawer" onPress={() => navigation.openDrawer()} />
+      <Button title="Open Drawer" onPress={() => navigation.goBack()} /> */}
     </View>
   );
 };
