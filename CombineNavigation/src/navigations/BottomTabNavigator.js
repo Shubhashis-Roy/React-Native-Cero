@@ -1,5 +1,5 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Home, Notifications, Wallet} from '../screens';
+import {Notifications, Wallet} from '../screens';
 import {ROUTES} from '../constants';
 import SettingNavigator from './SettingNavigator';
 import HomeNavigator from './HomeNavigator';
