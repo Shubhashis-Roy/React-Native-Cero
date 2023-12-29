@@ -1,8 +1,12 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {Button, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {COLORS} from '../../constants';
+import {useNavigation} from '@react-navigation/native';
+import Tweet from './Tweet';
 
 const Home = () => {
+  const {navigate} = useNavigation();
+
   return (
     <View
       style={{
@@ -11,7 +15,7 @@ const Home = () => {
         alignItems: 'center',
         backgroundColor: COLORS.bgColor,
       }}>
-      <Text style={styles.text}>Home!</Text>
+      <Button title=" Go to Tweet Page" onPress={() => navigate(Tweet)} />
     </View>
   );
 };

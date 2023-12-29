@@ -4,8 +4,11 @@ export default {
   FORGOT_PASSWORD: 'Forgot Password',
 
   HOME: 'Home',
+  HOME_NAVIGATOR: 'Home_Navigator',
   HOME_TAB: 'Home Tab',
   HOME_DRAWER: 'Home Drawer',
+  TWEET: 'Tweet',
+  TWEET_DETAILS: 'Tweet_Details',
 
   WALLET: 'Wallet',
   WALLET_DRAWER: 'Wallet Drawer',

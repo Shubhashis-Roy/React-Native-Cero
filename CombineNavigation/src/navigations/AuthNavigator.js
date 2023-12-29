@@ -2,7 +2,6 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {COLORS, ROUTES} from '../constants';
 import {Login, ForgotPassword, Register} from '../screens';
-import ButtonTapNavigator from './BottomTabNavigator';
 import DrawerNavigator from './DrawerNavigator';
 
 const Stack = createStackNavigator();
