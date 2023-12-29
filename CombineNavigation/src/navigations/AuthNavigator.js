@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {COLORS, ROUTES} from '../constants';
 import {Login, ForgotPassword, Register} from '../screens';
 import ButtonTapNavigator from './BottomTabNavigator';
+import DrawerNavigator from './DrawerNavigator';
 
 const Stack = createStackNavigator();
 
@@ -27,7 +28,7 @@ const AuthNavigator = () => {
       />
       <Stack.Screen
         name={ROUTES.HOME}
-        component={ButtonTapNavigator}
+        component={DrawerNavigator}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
