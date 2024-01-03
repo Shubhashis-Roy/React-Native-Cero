@@ -103,7 +103,7 @@ Read more about how css work:
   - StackActions reference:
     <a href="https://reactnavigation.org/docs/stack-actions">Link</a>
 
-#### Query :
+#### Questn :
 
 onClick={() => handleClicked()}
 
